@@ -132,7 +132,7 @@
   .product-card {
     @apply bg-white rounded shadow-card
            hover:shadow-card-hover transition-shadow duration-350
-           overflow-hidden group;
+           overflow-hidden;
   }
 
   /* ─── Certification badge ────────────────────────────────── */
