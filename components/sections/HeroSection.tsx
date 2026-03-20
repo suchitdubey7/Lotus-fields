@@ -1,14 +1,30 @@
+import Image from 'next/image'
 import Button from '@/components/ui/Button'
 
 export default function HeroSection() {
   return (
-    <section className="hero-bg hero-texture relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+
+      {/* Background photo */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://images.unsplash.com/photo-1710421576768-ff985fa63b60?auto=format&fit=crop&w=1800&q=85"
+          alt="Close-up of premium white Makhana fox nuts"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        {/* Dark green gradient overlay — keeps text readable & on-brand */}
+        <div className="absolute inset-0 bg-gradient-to-r from-satva-deep/95 via-satva-deep/80 to-satva-deep/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-satva-deep/60 via-transparent to-transparent" />
+      </div>
 
       {/* Decorative circle */}
-      <div className="absolute right-[-10%] top-[10%] w-[600px] h-[600px] rounded-full border border-satva-cream/5 pointer-events-none" />
-      <div className="absolute right-[-5%] top-[15%] w-[420px] h-[420px] rounded-full border border-satva-cream/8 pointer-events-none" />
+      <div className="absolute right-[-10%] top-[10%] w-[600px] h-[600px] rounded-full border border-satva-cream/5 pointer-events-none z-10" />
+      <div className="absolute right-[-5%] top-[15%] w-[420px] h-[420px] rounded-full border border-satva-cream/8 pointer-events-none z-10" />
 
-      <div className="relative z-10 max-w-content mx-auto px-6 md:px-12 lg:px-16 w-full pt-24 pb-20 md:pt-32 md:pb-28">
+      <div className="relative z-20 max-w-content mx-auto px-6 md:px-12 lg:px-16 w-full pt-24 pb-20 md:pt-32 md:pb-28">
         <div className="max-w-3xl">
 
           {/* Eyebrow */}
@@ -59,7 +75,7 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40 z-20">
         <span className="text-[10px] text-satva-cream uppercase tracking-widest">Scroll</span>
         <div className="w-px h-10 bg-gradient-to-b from-satva-cream to-transparent" />
       </div>
