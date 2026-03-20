@@ -2,7 +2,7 @@
 
 // Replace YOUR_WHATSAPP_NUMBER with your number in international format, no spaces or dashes
 // e.g. 919876543210 for +91 98765 43210
-const WHATSAPP_NUMBER = 'YOUR_WHATSAPP_NUMBER'
+const WHATSAPP_NUMBER = '919930287551'
 const WHATSAPP_MESSAGE = encodeURIComponent(
   'Hi SATVA team, I\'m interested in placing a bulk order / sample request for Makhana. Could you share more details?'
 )
