@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Reset & Typography ──────────────────────────────────── */
+@layer base {
+  :root {
+    --font-playfair: 'Playfair Display', serif;
+    --font-inter:    'Inter', sans-serif;
+  }
+
+  html {
+    @apply scroll-smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-satva-warm text-satva-dark font-sans;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+
+  /* ─── Headings ─────────────────────────────────────────── */
+  h1, h2, h3 {
+    @apply font-display;
+    font-feature-settings: "liga" 1, "swsh" 0;
+  }
+
+  h4, h5, h6 {
+    @apply font-sans font-semibold;
+  }
+
+  /* ─── Focus ring ────────────────────────────────────────── */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-satva-forest;
+  }
+
+  /* ─── Selection ─────────────────────────────────────────── */
+  ::selection {
+    @apply bg-satva-fog text-satva-deep;
+  }
+
+  /* ─── Smooth image loading ───────────────────────────────── */
+  img {
+    @apply max-w-full;
+  }
+}
+
+/* ─── Component Layer ──────────────────────────────────────────── */
+@layer components {
+
+  /* ─── Buttons ──────────────────────────────────────────── */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2
+           font-sans text-sm font-medium tracking-wide
+           transition-all duration-250 ease-in-out
+           select-none cursor-pointer;
+    letter-spacing: 0.04em;
+  }
+
+  .btn-primary {
+    @apply btn bg-satva-deep text-satva-cream
+           px-8 py-3.5 rounded-sm
+           hover:bg-satva-forest active:bg-satva-deep
+           focus-visible:ring-2 focus-visible:ring-satva-forest;
+  }
+
+  .btn-primary-light {
+    @apply btn bg-satva-cream text-satva-deep
+           px-8 py-3.5 rounded-sm
+           hover:bg-white active:bg-satva-linen;
+  }
+
+  .btn-outline {
+    @apply btn border border-satva-deep text-satva-deep
+           px-8 py-3.5 rounded-sm bg-transparent
+           hover:bg-satva-deep hover:text-satva-cream
+           transition-all duration-250;
+  }
+
+  .btn-outline-light {
+    @apply btn border border-satva-cream text-satva-cream
+           px-8 py-3.5 rounded-sm bg-transparent
+           hover:bg-satva-cream hover:text-satva-deep
+           transition-all duration-250;
+  }
+
+  .btn-gold {
+    @apply btn bg-satva-gold text-satva-dark
+           px-8 py-3.5 rounded-sm
+           hover:bg-satva-gold-light active:bg-satva-gold;
+  }
+
+  .btn-ghost {
+    @apply btn text-satva-deep px-4 py-2
+           hover:bg-satva-linen rounded-sm;
+  }
+
+  /* ─── Section containers ───────────────────────────────── */
+  .section {
+    @apply px-6 md:px-12 lg:px-16 py-20 md:py-28;
+  }
+
+  .section-sm {
+    @apply px-6 md:px-12 lg:px-16 py-12 md:py-16;
+  }
+
+  .container-content {
+    @apply max-w-content mx-auto;
+  }
+
+  /* ─── Section labels (eyebrow text) ─────────────────────── */
+  .label {
+    @apply text-xs font-sans font-medium tracking-widest uppercase
+           text-satva-gold;
+    letter-spacing: 0.2em;
+  }
+
+  .label-muted {
+    @apply text-xs font-sans font-medium tracking-widest uppercase
+           text-satva-mid;
+    letter-spacing: 0.2em;
+  }
+
+  /* ─── Divider ────────────────────────────────────────────── */
+  .divider {
+    @apply border-t border-satva-border;
+  }
+
+  /* ─── Product card ───────────────────────────────────────── */
+  .product-card {
+    @apply bg-white rounded shadow-card
+           hover:shadow-card-hover transition-shadow duration-350
+           overflow-hidden group;
+  }
+
+  /* ─── Certification badge ────────────────────────────────── */
+  .cert-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2
+           border border-satva-border rounded-sm text-sm text-satva-mid;
+  }
+
+  /* ─── Form elements ──────────────────────────────────────── */
+  .form-input {
+    @apply w-full px-4 py-3 text-base font-sans text-satva-dark bg-white
+           border border-satva-border rounded-sm
+           placeholder:text-satva-mid
+           focus:outline-none focus:border-satva-forest
+           transition-colors duration-200;
+  }
+
+  .form-label {
+    @apply block text-sm font-sans font-medium text-satva-dark mb-1.5;
+  }
+
+  /* ─── Gold accent line ───────────────────────────────────── */
+  .gold-line {
+    @apply block w-12 h-0.5 bg-satva-gold mt-4 mb-6;
+  }
+}
+
+/* ─── Utility Layer ────────────────────────────────────────────── */
+@layer utilities {
+  /* Scroll snap */
+  .snap-x-mandatory {
+    scroll-snap-type: x mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+
+  /* Text balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient text */
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-satva-gold to-yellow-300 bg-clip-text text-transparent;
+  }
+}
+
+/* ─── Navigation scroll behaviour ─────────────────────────────── */
+.nav-transparent {
+  @apply bg-transparent;
+}
+.nav-solid {
+  @apply bg-white shadow-sm;
+}
+
+/* ─── Hero section depth ────────────────────────────────────────── */
+.hero-bg {
+  background: linear-gradient(
+    145deg,
+    #1C3829 0%,
+    #2A5238 40%,
+    #1C3829 100%
+  );
+}
+
+/* Subtle botanical texture via CSS pattern */
+.hero-texture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle at 20% 80%,
+    rgba(196, 151, 58, 0.06) 0%,
+    transparent 50%
+  ), radial-gradient(
+    circle at 80% 20%,
+    rgba(122, 168, 130, 0.04) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
