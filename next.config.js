@@ -6,6 +6,12 @@ const nextConfig = {
   // Image optimisation: disabled for static export; re-enable with a loader for Vercel
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
   },
 
   // Trailing slash for static hosting compatibility

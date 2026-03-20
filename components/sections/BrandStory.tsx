@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Button from '@/components/ui/Button'
 
 export default function BrandStory() {
@@ -38,8 +39,28 @@ export default function BrandStory() {
             </div>
           </div>
 
-          {/* Stats / visual */}
-          <div className="grid grid-cols-2 gap-4">
+          {/* Image + Stats */}
+          <div className="flex flex-col gap-4">
+
+            {/* Hero image */}
+            <div className="relative w-full aspect-[4/3] rounded overflow-hidden shadow-elevated">
+              <Image
+                src="https://images.unsplash.com/photo-1681891231100-32bd84732a94?auto=format&fit=crop&w=900&q=85"
+                alt="Lotus seed pod — the source plant of Makhana, growing in Bihar wetlands"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-satva-deep/40 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <p className="text-satva-cream/90 text-xs font-sans tracking-wider uppercase">
+                  Euryale ferox · Mithila, Bihar
+                </p>
+              </div>
+            </div>
+
+            {/* Stats grid */}
+            <div className="grid grid-cols-2 gap-4">
             {[
               { value: '90%', label: 'of global Makhana supply comes from Bihar' },
               { value: '2,000+', label: 'farmer families in our supply network' },
@@ -54,7 +75,9 @@ export default function BrandStory() {
                 <span className="text-sm text-satva-mid leading-snug">{stat.label}</span>
               </div>
             ))}
-          </div>
+            </div>{/* end stats grid */}
+
+          </div>{/* end image + stats column */}
 
         </div>
       </div>
