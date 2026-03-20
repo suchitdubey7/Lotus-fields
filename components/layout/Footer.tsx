@@ -44,7 +44,7 @@ export default function Footer() {
               Premium single-origin Makhana sourced from the Mithila heartland of Bihar. Export-grade quality, certified purity, trusted by importers across three continents.
             </p>
             <div className="space-y-1.5 text-sm text-satva-cream/60">
-              <p>📧 <a href="mailto:alumni.chinmaya@gmail.com" className="hover:text-satva-gold transition-colors">alumni.chinmaya@gmail.com</a></p>
+              <p>📧 <a href="mailto:casuchitdubey@gmail.com" className="hover:text-satva-gold transition-colors">casuchitdubey@gmail.com</a></p>
               <p>🌐 satvafoods.com</p>
             </div>
           </div>
