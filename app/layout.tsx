@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
@@ -19,6 +19,13 @@ const inter = Inter({
   display: 'swap',
   weight: ['300', '400', '500', '600'],
 })
+
+/* ─── Viewport (critical for mobile rendering) ─────────────────── */
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 /* ─── Metadata ─────────────────────────────────────────────────── */
 export const metadata: Metadata = {
@@ -94,7 +101,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable}`}
       suppressHydrationWarning
     >
-      <body className="flex min-h-screen flex-col">
+      <body className="flex min-h-screen flex-col overflow-x-hidden">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

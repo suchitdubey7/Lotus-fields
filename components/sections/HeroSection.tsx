@@ -24,7 +24,7 @@ export default function HeroSection() {
       <div className="absolute right-[-10%] top-[10%] w-[600px] h-[600px] rounded-full border border-satva-cream/5 pointer-events-none z-10" />
       <div className="absolute right-[-5%] top-[15%] w-[420px] h-[420px] rounded-full border border-satva-cream/8 pointer-events-none z-10" />
 
-      <div className="relative z-20 max-w-content mx-auto px-6 md:px-12 lg:px-16 w-full pt-24 pb-20 md:pt-32 md:pb-28">
+      <div className="relative z-20 max-w-content mx-auto px-4 sm:px-6 md:px-12 lg:px-16 w-full pt-24 pb-16 md:pt-32 md:pb-28">
         <div className="max-w-3xl">
 
           {/* Eyebrow */}

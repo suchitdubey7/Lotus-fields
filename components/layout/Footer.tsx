@@ -29,11 +29,11 @@ export default function Footer() {
     <footer className="bg-satva-dark text-satva-cream/80">
 
       {/* Main footer */}
-      <div className="max-w-content mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
+      <div className="max-w-content mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8">
 
           {/* Brand column */}
-          <div className="lg:col-span-2">
+          <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="inline-block mb-5">
               <span className="font-display text-3xl text-satva-cream tracking-wider">SATVA</span>
               <p className="text-[10px] font-sans tracking-[0.25em] uppercase text-satva-gold mt-0.5">
@@ -74,8 +74,8 @@ export default function Footer() {
 
       {/* Certification strip */}
       <div className="border-t border-white/10">
-        <div className="max-w-content mx-auto px-6 md:px-12 lg:px-16 py-6">
-          <div className="flex flex-wrap items-center gap-3 md:gap-4">
+        <div className="max-w-content mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-5 md:py-6">
+          <div className="flex flex-wrap items-center gap-2 md:gap-4">
             <span className="text-xs text-satva-cream/40 mr-2">Certified &amp; Compliant:</span>
             {['FSSAI Licensed', 'APEDA Registered', 'ISO 22000', 'India Organic / NPOP', 'NABL Lab Tested'].map((cert) => (
               <span key={cert} className="cert-badge border-white/20 text-satva-cream/50 text-xs py-1 px-3">
@@ -88,7 +88,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-content mx-auto px-6 md:px-12 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="max-w-content mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-satva-cream/40">
             © {new Date().getFullYear()} SATVA Foods. All rights reserved. Originating from Bihar, India.
           </p>
