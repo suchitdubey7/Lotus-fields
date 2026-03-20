@@ -16,8 +16,8 @@ export default function HeroSection() {
           sizes="100vw"
         />
         {/* Dark green gradient overlay — keeps text readable & on-brand */}
-        <div className="absolute inset-0 bg-gradient-to-r from-satva-deep/95 via-satva-deep/80 to-satva-deep/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-satva-deep/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-satva-deep/95 via-satva-deep/70 to-satva-deep/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-satva-deep/50 via-transparent to-transparent" />
       </div>
 
       {/* Decorative circle */}
