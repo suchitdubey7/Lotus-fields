@@ -6,7 +6,7 @@ import { certifications } from '@/lib/products'
 export const metadata: Metadata = {
   title: 'Quality & Certifications',
   description:
-    'SATVA's quality system: FSSAI, APEDA, ISO 22000, India Organic, and NABL batch testing. Every shipment backed by a complete Certificate of Analysis and export document pack.',
+    "SATVA's quality system: FSSAI, APEDA, ISO 22000, India Organic, and NABL batch testing. Every shipment backed by a complete Certificate of Analysis and export document pack.",
 }
 
 const testParams = [

@@ -16,7 +16,7 @@ import { faqs } from '@/lib/products'
 export const metadata: Metadata = {
   title: 'SATVA — Premium Makhana from Bihar | Export-Grade Fox Nuts',
   description:
-    'SATVA sources single-origin Makhana (fox nuts) direct from Bihar's Mithila farms. FSSAI certified, lab-tested, export-ready for UAE, UK & USA. Premium quality. Pure goodness.',
+    "SATVA sources single-origin Makhana (fox nuts) direct from Bihar's Mithila farms. FSSAI certified, lab-tested, export-ready for UAE, UK & USA. Premium quality. Pure goodness.",
 }
 
 export default function HomePage() {
