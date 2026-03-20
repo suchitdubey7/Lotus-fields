@@ -13,7 +13,7 @@ interface BaseProps {
   children: React.ReactNode
 }
 
-interface ButtonProps extends BaseProps, ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends BaseProps, Omit<ButtonHTMLAttributes<HTMLButtonElement>, keyof BaseProps> {
   href?: undefined
 }
 
