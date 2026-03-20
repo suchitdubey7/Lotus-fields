@@ -9,7 +9,7 @@ export const products: Product[] = [
     description:
       'Our flagship product — large, crisp, ivory-white fox nuts hand-sorted from Mithila farms. The standard for discerning importers.',
     longDescription:
-      'SATVA Premium White Makhana is sourced exclusively from cooperative farmers in the Darbhanga and Madhubani districts of Bihar — the world's largest Makhana-producing region. Every batch is kiln-roasted to 98% moisture compliance, lab-tested for aflatoxins and heavy metals, and double-sorted by size and colour before packaging. The result: consistent, premium-grade fox nuts that meet the strictest import standards across the UAE, UK, and USA.',
+      "SATVA Premium White Makhana is sourced exclusively from cooperative farmers in the Darbhanga and Madhubani districts of Bihar — the world's largest Makhana-producing region. Every batch is kiln-roasted to 98% moisture compliance, lab-tested for aflatoxins and heavy metals, and double-sorted by size and colour before packaging. The result: consistent, premium-grade fox nuts that meet the strictest import standards across the UAE, UK, and USA.",
     grade: 'Premium',
     size: '4–6 mm',
     packSizes: ['100g', '250g', '500g', '1 kg', '5 kg', '25 kg'],
@@ -160,7 +160,7 @@ export const certifications: Certification[] = [
   {
     name: 'FSSAI Licensed',
     issuer: 'Food Safety and Standards Authority of India',
-    description: 'India's primary food safety regulatory certification — mandatory for all food manufacturers and exporters.',
+    description: "India's primary food safety regulatory certification — mandatory for all food manufacturers and exporters.",
     icon: 'shield-check',
   },
   {

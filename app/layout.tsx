@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: '%s | SATVA Makhana',
   },
   description:
-    'SATVA sources single-origin Makhana (fox nuts) direct from Bihar's Mithila farms. FSSAI certified, lab-tested, export-ready for UAE, UK & USA. Premium quality. Pure goodness.',
+    "SATVA sources single-origin Makhana (fox nuts) direct from Bihar's Mithila farms. FSSAI certified, lab-tested, export-ready for UAE, UK & USA. Premium quality. Pure goodness.",
   keywords: [
     'makhana export',
     'fox nuts supplier',

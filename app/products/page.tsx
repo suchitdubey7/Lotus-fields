@@ -7,7 +7,7 @@ import { products } from '@/lib/products'
 export const metadata: Metadata = {
   title: 'Our Makhana Products',
   description:
-    'Browse SATVA's full range — Premium White Makhana, Jumbo Gourmet Grade, Certified Organic, Roasted Snack Packs, and Makhana Flour. Export-grade and retail-ready.',
+    "Browse SATVA's full range — Premium White Makhana, Jumbo Gourmet Grade, Certified Organic, Roasted Snack Packs, and Makhana Flour. Export-grade and retail-ready.",
 }
 
 export default function ProductsPage() {
