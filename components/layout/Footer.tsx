@@ -1,26 +1,25 @@
 import Link from 'next/link'
 
 const footerLinks = {
-  Products: [
+  Shop: [
     { label: 'Premium White Makhana', href: '/products/premium-white-makhana' },
     { label: 'Jumbo Makhana', href: '/products/jumbo-makhana' },
     { label: 'Organic Makhana', href: '/products/organic-makhana' },
-    { label: 'Roasted Makhana', href: '/products/roasted-salted-makhana' },
+    { label: 'Roasted & Salted', href: '/products/roasted-salted-makhana' },
     { label: 'Makhana Flour', href: '/products/makhana-flour' },
     { label: 'All Products', href: '/products' },
   ],
   Company: [
-    { label: 'About SATVA', href: '/about' },
+    { label: 'Our Story', href: '/about' },
     { label: 'Why Makhana', href: '/why-makhana' },
     { label: 'Quality & Certifications', href: '/quality' },
-    { label: 'Export & B2B', href: '/export' },
     { label: 'Contact Us', href: '/contact' },
   ],
-  Resources: [
+  Help: [
     { label: 'FAQ', href: '/faq' },
-    { label: 'Request Sample', href: '/contact#sample' },
-    { label: 'Bulk Enquiry', href: '/contact#bulk' },
-    { label: 'Private Label', href: '/export#private-label' },
+    { label: 'Shipping Info', href: '/faq#shipping' },
+    { label: 'Returns & Refunds', href: '/faq#returns' },
+    { label: 'Wholesale Enquiry', href: '/contact#wholesale' },
   ],
 }
 

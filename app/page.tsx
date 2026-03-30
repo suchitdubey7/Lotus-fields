@@ -4,7 +4,7 @@ import TrustBar from '@/components/sections/TrustBar'
 import FeaturedProducts from '@/components/sections/FeaturedProducts'
 import BrandStory from '@/components/sections/BrandStory'
 import HealthBenefits from '@/components/sections/HealthBenefits'
-import B2BSection from '@/components/sections/B2BSection'
+import HowItWorks from '@/components/sections/HowItWorks'
 import CertificationsSection from '@/components/sections/CertificationsSection'
 import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import NewsletterSection from '@/components/sections/NewsletterSection'
@@ -14,9 +14,9 @@ import FAQAccordion from '@/components/sections/FAQAccordion'
 import { faqs } from '@/lib/products'
 
 export const metadata: Metadata = {
-  title: 'SATVA — Premium Makhana from Bihar | Export-Grade Fox Nuts',
+  title: 'SATVA — Premium Makhana Delivered Worldwide | Bihar Fox Nuts',
   description:
-    "SATVA sources single-origin Makhana (fox nuts) direct from Bihar's Mithila farms. FSSAI certified, lab-tested, export-ready for UAE, UK & USA. Premium quality. Pure goodness.",
+    "Order premium single-origin Makhana direct from Bihar's Mithila farms. 100% natural, lab-tested, certified organic. Ships to UAE, UK & USA in 48 hours. Pure goodness, delivered.",
 }
 
 export default function HomePage() {
@@ -29,7 +29,7 @@ export default function HomePage() {
       <FeaturedProducts />
       <BrandStory />
       <HealthBenefits />
-      <B2BSection />
+      <HowItWorks />
       <CertificationsSection />
       <TestimonialsSection />
 
@@ -41,7 +41,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Common Questions"
                 title="Everything You Need to Know"
-                subtitle="Answers to the questions importers, distributors, and retail buyers ask most."
+                subtitle="Answers to the questions our customers ask most — about quality, shipping, and what makes SATVA different."
                 align="left"
                 className="mb-0"
               />

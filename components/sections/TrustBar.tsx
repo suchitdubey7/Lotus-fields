@@ -1,24 +1,16 @@
 const s = 'w-4 h-4 flex-shrink-0 text-satva-gold'
 
 const icons = {
+  truck: (
+    <svg className={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/>
+      <circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+    </svg>
+  ),
   shield: (
     <svg className={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
       <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7l-9-5z"/>
       <polyline points="9 12 11 14 15 10"/>
-    </svg>
-  ),
-  certificate: (
-    <svg className={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="3" width="20" height="14" rx="2"/>
-      <path d="M8 21h8M12 17v4"/>
-      <path d="M7 8h10M7 11h6"/>
-    </svg>
-  ),
-  award: (
-    <svg className={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="8" r="6"/>
-      <polyline points="9.09 15 8 22 12 19.27 16 22 14.91 15"/>
-      <polyline points="9 8 11 10 15 6"/>
     </svg>
   ),
   leaf: (
@@ -27,10 +19,15 @@ const icons = {
       <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
     </svg>
   ),
-  flask: (
+  lock: (
     <svg className={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M9 3h6M9 3v7l-5 9a1 1 0 0 0 .9 1.5h14.2A1 1 0 0 0 20 19l-5-9V3"/>
-      <path d="M6.5 14.5h11"/>
+      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+      <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+    </svg>
+  ),
+  star: (
+    <svg className={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
     </svg>
   ),
   globe: (
@@ -42,12 +39,12 @@ const icons = {
 }
 
 const items = [
-  { icon: icons.shield,      text: 'FSSAI Licensed' },
-  { icon: icons.certificate, text: 'APEDA Registered' },
-  { icon: icons.award,       text: 'ISO 22000 Certified' },
-  { icon: icons.leaf,        text: 'India Organic / NPOP' },
-  { icon: icons.flask,       text: 'NABL Lab Tested' },
-  { icon: icons.globe,       text: 'Export to UAE · UK · USA' },
+  { icon: icons.truck,  text: 'Ships to UAE · UK · USA' },
+  { icon: icons.leaf,   text: '100% Natural, No Additives' },
+  { icon: icons.shield, text: 'FSSAI & Lab Certified' },
+  { icon: icons.lock,   text: 'Secure Checkout' },
+  { icon: icons.star,   text: 'Farm-Direct Quality' },
+  { icon: icons.globe,  text: 'Dispatched from Bihar in 48hrs' },
 ]
 
 export default function TrustBar() {
